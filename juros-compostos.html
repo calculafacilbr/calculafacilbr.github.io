@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Entenda como funcionam os juros compostos, veja a fórmula, exemplos práticos e como calcular o crescimento de um valor ao longo do tempo.">
+  <meta name="theme-color" content="#10251f">
+  <title>Juros Compostos: Como Funcionam e Como Calcular | CalculaFácil</title>
+  <link rel="canonical" href="https://calculafacilbr.github.io/juros-compostos.html">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #10251f;
+      color: #edf5ef;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+    header, footer {
+      padding: 20px;
+      background: #0b1c17;
+      border-bottom: 1px solid #294338;
+    }
+    header a, footer a { color: #b8ed75; text-decoration: none; }
+    .brand { font-size: 21px; font-weight: bold; }
+    main {
+      width: min(850px, 92%);
+      margin: 35px auto;
+    }
+    .eyebrow {
+      color: #b8ed75;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { font-size: clamp(30px, 6vw, 46px); }
+    h2 { margin-top: 38px; color: #b8ed75; font-size: 25px; }
+    h3 { color: #d8efc0; }
+    p, li { color: #d0ddd5; }
+    .intro, .card {
+      padding: 22px;
+      background: #173027;
+      border: 1px solid #294338;
+      border-radius: 16px;
+      margin: 20px 0;
+    }
+    .formula {
+      padding: 20px;
+      text-align: center;
+      background: #203d30;
+      border: 1px solid #52734d;
+      border-radius: 12px;
+      color: #d9f7b9;
+      font-size: 23px;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+    .example {
+      border-left: 4px solid #b8ed75;
+      padding: 12px 18px;
+      background: #173027;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+    .highlight { color: #b8ed75; font-weight: bold; }
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      margin: 12px 0;
+      background: #b8ed75;
+      color: #10251f;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a { color: #b8ed75; }
+    footer { border-top: 1px solid #294338; border-bottom: 0; }
+    footer p { margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">CalculaFácil</a>
+  </header>
+
+  <main>
+    <div class="eyebrow">GUIA DE EDUCAÇÃO FINANCEIRA</div>
+    <h1>Juros compostos: como funcionam e como calcular</h1>
+
+    <div class="intro">
+      <p>
+        Os juros compostos estão presentes em diferentes situações financeiras,
+        como investimentos, financiamentos, empréstimos e dívidas.
+        Entender seu funcionamento ajuda a avaliar como um valor pode crescer
+        ou aumentar ao longo do tempo.
+      </p>
+    </div>
+
+    <h2>O que são juros compostos?</h2>
+    <p>
+      Juros compostos são calculados sobre o valor inicial e também sobre
+      os juros acumulados nos períodos anteriores. É o que muitas pessoas
+      chamam de "juros sobre juros".
+    </p>
+    <p>
+      Isso significa que, quando existe rendimento positivo, a base utilizada
+      para calcular os juros pode aumentar a cada período. Com o passar do
+      tempo, esse efeito pode acelerar o crescimento do saldo.
+    </p>
+
+    <h2>Qual é a diferença entre juros simples e compostos?</h2>
+    <div class="card">
+      <h3>Juros simples</h3>
+      <p>
+        São calculados sempre sobre o valor inicial. Se você aplica R$ 1.000
+        a uma taxa de 1% ao mês, o rendimento é de R$ 10 por mês.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Juros compostos</h3>
+      <p>
+        São calculados sobre o saldo acumulado. Assim, os juros de um período
+        também podem gerar novos juros nos períodos seguintes.
+      </p>
+    </div>
+
+    <h2>Qual é a fórmula dos juros compostos?</h2>
+    <p>
+      Para calcular o montante de uma aplicação sem novos depósitos,
+      utiliza-se a seguinte fórmula:
+    </p>
+    <div class="formula">
+      M = C × (1 + i)<sup>t</sup>
+    </div>
+    <ul>
+      <li><strong>M:</strong> montante final.</li>
+      <li><strong>C:</strong> capital inicial.</li>
+      <li><strong>i:</strong> taxa de juros por período, em formato decimal.</li>
+      <li><strong>t:</strong> quantidade de períodos.</li>
+    </ul>
+    <p>
+      Por exemplo, uma taxa de 1% deve ser utilizada como 0,01 na fórmula.
+      A taxa e o prazo precisam estar na mesma unidade de tempo.
+    </p>
+
+    <h2>Exemplo prático de juros compostos</h2>
+    <p>
+      Imagine uma aplicação hipotética de R$ 1.000, com rendimento de 1%
+      ao mês, durante 12 meses, sem novos depósitos.
+    </p>
+    <div class="example">
+      <p>Capital inicial: R$ 1.000,00</p>
+      <p>Taxa hipotética: 1% ao mês</p>
+      <p>Prazo: 12 meses</p>
+      <p>Montante aproximado: <span class="highlight">R$ 1.126,83</span></p>
+      <p>Ganho bruto aproximado: <span class="highlight">R$ 126,83</span></p>
+    </div>
+    <p>
+      Esse exemplo é uma simulação matemática. Não representa a rentabilidade
+      garantida de nenhum investimento e não considera impostos, tarifas
+      ou inflação.
+    </p>
+
+    <h2>O que acontece quando você faz depósitos mensais?</h2>
+    <p>
+      Quando novos valores são adicionados periodicamente, cada depósito
+      também pode passar a gerar rendimentos a partir do momento em que
+      é aplicado.
+    </p>
+    <p>
+      Por isso, o resultado de uma simulação com depósitos mensais depende
+      do valor inicial, do valor de cada depósito, da taxa utilizada,
+      do prazo e do momento em que os depósitos são realizados.
+    </p>
+
+    <h2>O que pode influenciar o resultado?</h2>
+    <ul>
+      <li><strong>Taxa:</strong> taxas maiores podem aumentar o montante projetado, mas também podem envolver riscos diferentes.</li>
+      <li><strong>Tempo:</strong> períodos maiores permitem mais ciclos de capitalização.</li>
+      <li><strong>Depósitos adicionais:</strong> novos aportes aumentam o valor investido.</li>
+      <li><strong>Impostos e custos:</strong> podem reduzir o resultado líquido.</li>
+      <li><strong>Inflação:</strong> influencia o poder de compra do dinheiro ao longo do tempo.</li>
+    </ul>
+
+    <h2>Como calcular juros compostos online?</h2>
+    <p>
+      Você pode utilizar a calculadora gratuita do CalculaFácil para simular
+      diferentes cenários. Informe os valores solicitados, a taxa e o prazo
+      para visualizar uma estimativa do resultado.
+    </p>
+    <a class="button" href="index.html#ferramentas">
+      Acessar calculadora de juros compostos
+    </a>
+
+    <h2>Perguntas frequentes</h2>
+
+    <div class="card">
+      <h3>Juros compostos são sempre bons?</h3>
+      <p>
+        Não. Em investimentos, podem contribuir para o crescimento do saldo.
+        Em empréstimos e dívidas, podem fazer o valor devido aumentar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Quanto maior o prazo, maior o resultado?</h3>
+      <p>
+        Em uma simulação com taxa positiva e constante, um prazo maior
+        tende a produzir um montante maior. Na realidade, taxas e condições
+        podem variar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>O resultado da calculadora é garantido?</h3>
+      <p>
+        Não. A calculadora apresenta uma estimativa matemática baseada
+        nos dados informados. Resultados reais dependem das condições
+        de cada produto ou operação.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Juros compostos consideram inflação?</h3>
+      <p>
+        Não automaticamente. Para avaliar o ganho real, é necessário
+        considerar também a variação dos preços no período.
+      </p>
+    </div>
+
+    <div class="intro">
+      <strong>Importante:</strong>
+      <p>
+        Este conteúdo tem finalidade informativa e educativa. Não constitui
+        recomendação de investimento, oferta de produto financeiro ou
+        garantia de rentabilidade.
+      </p>
+    </div>
+
+    <p><a href="index.html">← Voltar ao CalculaFácil</a></p>
+  </main>
+
+  <footer>
+    <p><a href="index.html">CalculaFácil</a> · Ferramentas gratuitas para o dia a dia.</p>
+    <p><a href="privacidade.html">Privacidade</a> ·
+       <a href="contato.html">Contato</a></p>
+    <p>calculafacil.contato@gmail.com</p>
+  </footer>
+</body>
+</html>
