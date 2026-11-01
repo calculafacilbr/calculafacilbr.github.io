@@ -1,9 +1,8 @@
 
-const money = n =>
-  new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-  }).format(Number.isFinite(n) ? n : 0);
+const money = n => new Intl.NumberFormat('pt-BR', {
+  style: 'currency',
+  currency: 'BRL'
+}).format(Number.isFinite(n) ? n : 0);
 
 const defs = {
   juros: {
@@ -21,13 +20,9 @@ const defs = {
         total = total * (1 + v.rate / 100) + v.monthly;
       }
       const invested = v.initial + v.monthly * v.months;
-      return [
-        total,
-        `Você teria investido ${money(invested)}. Rendimento estimado: ${money(total - invested)}.`
-      ];
+      return [total, `Você teria investido ${money(invested)}. Rendimento estimado: ${money(total - invested)}.`];
     }
   },
-
   porcentagem: {
     title: 'Porcentagem',
     desc: 'Descubra quanto representa uma porcentagem de um valor.',
@@ -40,7 +35,6 @@ const defs = {
       return [r, `${v.rate}% de ${money(v.base)} equivale a ${money(r)}.`];
     }
   },
-
   desconto: {
     title: 'Calculadora de desconto',
     desc: 'Veja o preço final depois de aplicar um desconto.',
@@ -50,13 +44,9 @@ const defs = {
     ],
     calc: v => {
       const d = v.base * v.rate / 100;
-      return [
-        v.base - d,
-        `Você economiza ${money(d)}. Preço antes do desconto: ${money(v.base)}.`
-      ];
+      return [v.base - d, `Você economiza ${money(d)}. Preço antes do desconto: ${money(v.base)}.`];
     }
   },
-
   meta: {
     title: 'Meta de economia',
     desc: 'Calcule quanto guardar por mês para alcançar seu objetivo.',
@@ -75,7 +65,6 @@ const defs = {
       ];
     }
   },
-
   parcelas: {
     title: 'Divisor de parcelas',
     desc: 'Divida o valor em parcelas iguais, sem juros.',
@@ -85,13 +74,9 @@ const defs = {
     ],
     calc: v => {
       const months = Math.max(1, v.months);
-      return [
-        v.base / months,
-        `${months} parcelas iguais, sem juros. Total: ${money(v.base)}.`
-      ];
+      return [v.base / months, `${months} parcelas iguais, sem juros. Total: ${money(v.base)}.`];
     }
   },
-
   rendimento: {
     title: 'Rendimento mensal',
     desc: 'Faça uma simulação simples de rendimento sobre um valor.',
@@ -101,16 +86,12 @@ const defs = {
     ],
     calc: v => {
       const r = v.base * v.rate / 100;
-      return [
-        r,
-        `Estimativa de rendimento bruto em um mês. Saldo ilustrativo: ${money(v.base + r)}.`
-      ];
+      return [r, `Estimativa de rendimento bruto em um mês. Saldo ilustrativo: ${money(v.base + r)}.`];
     }
   }
 };
 
 let current = 'juros';
-
 const fields = document.getElementById('fields');
 
 function render(key) {
@@ -143,10 +124,7 @@ function update() {
   const v = {};
 
   d.fields.forEach(([id]) => {
-    v[id] = Math.max(
-      0,
-      Number(document.getElementById(id)?.value) || 0
-    );
+    v[id] = Math.max(0, Number(document.getElementById(id)?.value) || 0);
   });
 
   const out = d.calc(v);
