@@ -1,38 +1,297 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre nós | CalculaFácil</title>
-  <meta name="description" content="Conheça a CalculaFácil, um site com ferramentas gratuitas para facilitar seus cálculos do dia a dia.">
-  <link rel="stylesheet" href="style.css">
+
+  <title>Sobre a CalculaFácil | Calculadoras Gratuitas</title>
+  <meta name="description" content="Conheça a CalculaFácil, um site de calculadoras gratuitas para facilitar seus cálculos e seu planejamento financeiro.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://calculafacilbr.github.io/sobre.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #10251f;
+      color: #edf5ef;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #b8ed75;
+    }
+
+    .top {
+      padding: 22px 7%;
+      border-bottom: 1px solid #294238;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .brand span {
+      color: #b8ed75;
+    }
+
+    .back {
+      color: #b8ed75;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: min(900px, 90%);
+      margin: 55px auto;
+    }
+
+    .hero {
+      padding: 38px;
+      border: 1px solid #345347;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #19382d, #142c24);
+      margin-bottom: 30px;
+    }
+
+    .tag {
+      color: #b8ed75;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: clamp(32px, 6vw, 48px);
+      line-height: 1.15;
+      margin: 15px 0;
+      letter-spacing: -1.5px;
+    }
+
+    h1 span {
+      color: #b8ed75;
+    }
+
+    .hero p {
+      color: #c7d8cd;
+      font-size: 17px;
+      max-width: 680px;
+      margin-bottom: 0;
+    }
+
+    .section {
+      padding: 28px;
+      margin-bottom: 22px;
+      border-radius: 18px;
+      border: 1px solid #29483b;
+      background: #173027;
+    }
+
+    h2 {
+      color: #b8ed75;
+      font-size: 23px;
+      margin: 0 0 15px;
+    }
+
+    h3 {
+      color: #ffffff;
+      font-size: 17px;
+      margin: 23px 0 5px;
+    }
+
+    p {
+      color: #c8d8cf;
+      margin: 8px 0 14px;
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px;
+      margin-top: 20px;
+    }
+
+    .tool {
+      background: #203c30;
+      border: 1px solid #345347;
+      border-radius: 13px;
+      padding: 17px;
+    }
+
+    .tool strong {
+      color: #b8ed75;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .tool p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 13px 22px;
+      border-radius: 30px;
+      background: #b8ed75;
+      color: #10251f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .home-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      border: 1px solid #b8ed75;
+      border-radius: 30px;
+      color: #b8ed75;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 15px;
+      border-top: 1px solid #294238;
+      color: #91a99a;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .top {
+        padding: 18px 5%;
+      }
+
+      .container {
+        margin: 30px auto;
+      }
+
+      .hero {
+        padding: 25px;
+      }
+
+      .section {
+        padding: 22px;
+      }
+
+      .tools {
+        grid-template-columns: 1fr;
+      }
+
+      .back {
+        font-size: 12px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
+  <header class="top">
+    <a class="brand" href="index.html">Calcula<span>Fácil</span></a>
+    <a class="back" href="index.html">← Página inicial</a>
+  </header>
+
   <main class="container">
-    <h1>Sobre a CalculaFácil</h1>
 
-    <p>A CalculaFácil nasceu com uma ideia simples: tornar os cálculos do dia a dia mais fáceis, rápidos e acessíveis.</p>
+    <section class="hero">
+      <div class="tag">Conheça nosso projeto</div>
+      <h1>Sobre a <span>CalculaFácil</span></h1>
+      <p>Menos complicação, mais clareza. Criamos ferramentas gratuitas para tornar os cálculos do cotidiano mais simples e ajudar você a tomar decisões com mais informação.</p>
+    </section>
 
-    <p>Nosso objetivo é oferecer ferramentas gratuitas e práticas para ajudar você a organizar suas finanças, fazer simulações e tomar decisões com mais informação.</p>
+    <section class="section">
+      <h2>Quem somos</h2>
+      <p>A CalculaFácil é um site de ferramentas gratuitas criado para facilitar cálculos do dia a dia. Nossa proposta é reunir soluções simples, rápidas e acessíveis em um só lugar.</p>
+      <p>Você pode utilizar nossas calculadoras diretamente pelo navegador do celular, tablet ou computador, sem precisar criar uma conta ou instalar aplicativos.</p>
+    </section>
 
-    <h2>O que você encontra aqui?</h2>
+    <section class="section">
+      <h2>Nossas ferramentas</h2>
+      <p>Conheça as calculadoras disponíveis no site:</p>
 
-    <ul>
-      <li>Calculadora de juros compostos;</li>
-      <li>Calculadora de porcentagem;</li>
-      <li>Calculadora de descontos;</li>
-      <li>Calculadora de meta de economia;</li>
-      <li>Calculadora de parcelas;</li>
-      <li>Calculadora de rendimento mensal.</li>
-    </ul>
+      <div class="tools">
+        <div class="tool">
+          <strong>Juros compostos</strong>
+          <p>Simule o crescimento de um valor ao longo do tempo, considerando taxas e aportes quando disponíveis.</p>
+        </div>
 
-    <h2>Nosso compromisso</h2>
+        <div class="tool">
+          <strong>Porcentagem</strong>
+          <p>Descubra quanto representa uma porcentagem de determinado valor.</p>
+        </div>
 
-    <p>Buscamos oferecer uma experiência simples, transparente e acessível. As simulações são educativas e não representam garantia de resultados financeiros.</p>
+        <div class="tool">
+          <strong>Desconto</strong>
+          <p>Calcule a redução de preço e descubra o valor final de uma oferta.</p>
+        </div>
 
-    <p>CalculaFácil — simplificando seus cálculos.</p>
+        <div class="tool">
+          <strong>Meta de economia</strong>
+          <p>Planeje quanto guardar periodicamente para alcançar um objetivo.</p>
+        </div>
 
-    <p><a href="index.html">Voltar à página inicial</a></p>
+        <div class="tool">
+          <strong>Parcelas</strong>
+          <p>Divida valores em parcelas e visualize quanto cada pagamento representa.</p>
+        </div>
+
+        <div class="tool">
+          <strong>Rendimento mensal</strong>
+          <p>Faça simulações de rendimento a partir de um valor e de uma taxa informada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Nosso compromisso</h2>
+      <p>Buscamos oferecer uma experiência simples, organizada e transparente. Queremos que qualquer pessoa consiga utilizar nossas ferramentas e compreender os resultados apresentados.</p>
+      <p>Trabalhamos para melhorar o conteúdo e a experiência do site, com explicações e exemplos que ajudem os visitantes a entender os cálculos.</p>
+    </section>
+
+    <section class="section">
+      <h2>Transparência e responsabilidade</h2>
+      <p>As calculadoras apresentam simulações matemáticas para fins informativos e educativos. Os resultados podem não considerar impostos, tarifas, inflação ou condições específicas de produtos e serviços.</p>
+      <p>As simulações não constituem aconselhamento financeiro, recomendação de investimento ou garantia de resultados futuros.</p>
+    </section>
+
+    <section class="section contact">
+      <h2>Fale conosco</h2>
+      <p>Tem uma sugestão, encontrou algum problema ou deseja entrar em contato com a CalculaFácil?</p>
+      <a href="mailto:calculafacil.contato@gmail.com">Enviar um e-mail</a>
+    </section>
+
+    <div style="text-align:center; margin:30px 0;">
+      <a class="home-button" href="index.html">← Voltar ao CalculaFácil</a>
+    </div>
+
   </main>
+
+  <footer>
+    CalculaFácil © 2026 — Ferramentas gratuitas para o seu dia a dia.
+  </footer>
+
 </body>
 </html>
