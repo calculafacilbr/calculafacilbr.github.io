@@ -1,0 +1,34 @@
+# CalculaFácil — site gratuito e editável
+
+## O que vem no pacote
+- `index.html`: conteúdo e estrutura do site
+- `style.css`: cores, layout e aparência
+- `script.js`: cálculos e interações
+
+## Como editar pelo celular ou computador
+1. Extraia o arquivo ZIP.
+2. Abra `index.html`, `style.css` ou `script.js` em um editor de texto/código.
+3. Altere os textos, cores ou ferramentas e salve.
+4. Abra `index.html` no navegador para testar.
+
+Você pode usar o Visual Studio Code, ou um editor gratuito de texto/código no celular.
+
+## Como publicar gratuitamente
+Uma opção é o GitHub Pages:
+1. Crie uma conta gratuita em https://github.com
+2. Crie um repositório público chamado `calculafacil`.
+3. Envie os três arquivos do site para o repositório.
+4. Em Settings > Pages, escolha publicar a partir da branch `main` e da pasta `/root`.
+5. O GitHub fornecerá um endereço público gratuito.
+
+Outra opção é Netlify (plano gratuito), que permite publicar os arquivos do site.
+
+## Antes de tentar monetizar
+- Troque o e-mail de contato `contato@seudominio.com` por um endereço seu.
+- Publique páginas reais de Política de Privacidade, Termos de Uso e Contato.
+- Escreva conteúdo original e útil para cada ferramenta.
+- Verifique as regras atuais do Google AdSense; aprovação e receita não são garantidas.
+- Não coloque anúncios enganosos nem prometa rendimentos financeiros.
+
+## Observações
+Este é um site estático: os cálculos funcionam sem servidor e sem banco de dados. Não coleta nem salva os valores digitados. As simulações financeiras são educativas e não constituem recomendação de investimento.
